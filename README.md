@@ -1,108 +1,148 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1 align="center">PROTEIN SHAKES N SNACKS<h1>
 
-Welcome MariuszKaminski,
+<p align="center">
+    <a href="https://food-bank-manager.herokuapp.com/">View the live project here.</a>
+</p>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## This is a web based application designed for the staff members of a local food bank to serve as a tool for basic stock keeping.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+<h2 align="center"><img src="https://i.ibb.co/0tRh3g5/responsive-design.png"></h2>
 
-## Gitpod Reminders
+-   ## User Experience (UX)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+-   ### User stories
 
-`python3 -m http.server`
+    -   #### First Time User Goals
 
-A blue button should appear to click: _Make Public_,
+        1. As a First Time User, I want to easily understand the main purpose of the web app.
+        2. As a First Time User, I want to have access to basic functionaities. 
+        3. As a First Time User, I want to be able to register to gain access to more advanced functionalities
+    
+    -   #### Returning Visitor Goals
 
-Another blue button should appear to click: _Open Browser_.
+        1. As a Returning User, I want to be able to log into my profile.
+        2. As a Returning User, I want to be able modify data and edit the app content.
+    
+    -   #### Frequent User Goals
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+        1. As a Frequent User, I want to the app to safely store and retrieve data.        
+        2. As a Frequent User, I want to the app to be fast and efficient.
 
-A blue button should appear to click: _Make Public_,
+-   ### Design
 
-Another blue button should appear to click: _Open Browser_.
+    -   #### Color Scheme
+        -   The application's two main colours are teal and white. The buttons have their distinctive and contrasting colours to visually hint at their function.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+    -   #### Typography
+        -   The font of choice for the application is Lato Google font with Sans-Serif as backup.
 
-To log into the Heroku toolbelt CLI:
+    -   #### Imagery
+        -   The Background image is referring to the purpose of the application. Icons hint at various features and CRUD functionalities.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+*   ### Wireframes
+    -   Atribute schema [View](/static/img/Database_schema.PNG)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+    -   Relationship diagram (ERD) [View](/static/img/Relationship_diagram_(ERD).PNG)
 
-------
+    -   Homepage (Visitor's view) [View](/static/img/Homepage.png)
 
-## Release History
+    -   Homepage (Logged in User's view) [View](/static/img/user_loggedin_view.png)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+    -   Add New Food Item Page (Logged in User's view) [View](/static/img/add_new_item_view.png)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+    -   Manage Food Categories Page (Admin's view) [View](/static/img/manage_food_categories_view.png)
+    
+## Features
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- Responsive on all device screen sizes
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- Interactive elements 
+    -   Actions involving login, using CRUD functionalities and editing food items are confirmed Swith feedback messages [View](/static/img/feedback_message.png) 
+    - Low stock warning is triggered if item's inventory value is 10 or less [View](/static/img/low_stock_warning.png)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- CRUD functionalities
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Technologies
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Languages Used
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [Python](https://www.python.org/)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Frameworks, Libraries & Programs Used
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+1. [Font Awesome:](http://fontawesome.com/)
+    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+1. [Materialize:](https://materializecss.com/)
+    - Materialize is used to provide the main Nav Bar, the side Nav Bar, the Hompage collapsible and food categories cards.
+1. [jQuery:](http://jquery.com/)
+    - jQuery is used to implement Materialize elements and form validation.
+1. [Flask:](https://palletsprojects.com/p/flask/)
+    - Flask is used to render html templates, enable user login password generation and flashing feedback messages.
+1. [Git:](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+1. [GitHub:](https://github.com/)
+    - GitHub is used to store the projects code after being pushed from Git.
+1. [MongoDB:](https://www.mongodb.com/)
+    - MongoDB is used to provide the application with a database where the data saved by the users can be stored and edited.
+1. [diagrams.net:](https://app.diagrams.net/)
+    - Web based application diagrams.net is used to create wireframes during the design stage of the project.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Testing
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](/static/img/W3C_markup_validator.PNG) <br>
+    Please note that even though the html validatation shows errors, these are all related to the use of Flask values in curly brackets and Jinga templating language expressions which are essential for the app's functioning.
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](/static/img/W3C_CSS_validator.PNG)
+-   I have used [PEP8 online check](http://pep8online.com/) to esure the Python code complies to [PEP8 Style Guide](https://peps.python.org/pep-0008/) in terms of layout, line length, indentation, blank lines, etc. - [Results](/static/img/PEP8%20checker%20result.PNG)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Testing User Stories from User Experience (UX) Section
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+-   #### First Time Visitor Goals
 
-------
+    1. As a First Time User I can clearly distinugish the main sections of the web app's home page, the header with the app's name as well as buttons for registration and login. Below there is a search section and furter down a simple food item list.
+    2. As a First Time User, I can perform searches and have access to such data as available stock size.
+    3. As a First Time User, I've been able to register and create my profile giving me access to more advanced functionalities.
 
-## FAQ about the uptime script
+-   #### Returning Visitor Goals
 
-**Why have you added this script?**
+    1. As a Returning User, I've been able to log into the app.
+    2. As a Returning User, while being logged in I've been able to add, delete and edit particular food items as needed.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+-   #### Frequent User Goals
 
-**How will this affect me?**
+    1. As a Frequent User, I'm aware that all the data in the app is stored in a cloud storage service and can be accessed only by authorized staff.
+    2. As a Frequent User, I've been able to quickly update the just by clicking an item in the list and inputing figures in appropriate field.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Further Testing
+-   Black box testing schedule. [View](https://docs.google.com/document/d/1Xp4ro9cAy7-rdSsMTUlwHNvY8mwdun3R/edit?usp=sharing&ouid=113273292568686929472&rtpof=true&sd=true)
+-   The website was tested on Google Chrome, Internet Explorer and Microsoft Edge.
+-   The website was viewed on a variety of devices such as Desktop, Laptop and Android phone.
+-   A large amount of testing was done to ensure that all pages were linking correctly.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Known Bugs
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+-   Decrease and increase stock items fields need to be clicked near the bottom edge otherwise they can't be accessed. 
 
-**So….?**
+## Deployment
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+-   The app files have been manually deployed from a GitHub repository to a newly created Heroku app. The following commands have been executed in a Gitpod bash terminal:<br>
+    1.  heroku login -i
+    2.  heroku create app_name_here
+    3.  git push heroku main
 
-**Can I opt out?**
+## Credits
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Code
+-   The code has been largely adapted form [Code Institute's](https://codeinstitute.net/) 'Mini Project' tutorial in 'Backend Development' section by [Tim Nelson](https://github.com/TravelTimN).
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Content
+-   All content was written by the developer.
 
-**Anything more?**
+### Media
+-   Background image for the app is a free stock photo by Kindel Media at [Pexel] https://www.pexels.com/pl-pl/zdjecie/koktajl-sloj-odswiezenie-zimne-napoje-8181548/
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+### Acknowledgements
+-   Also many thanks to my Harlow College tutor Patrick Justus Phd who provided me with input on black box testing, database schema and ERD.
