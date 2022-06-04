@@ -4,7 +4,7 @@
     <a href="https://food-bank-manager.herokuapp.com/">View the live project here.</a>
 </p>
 
-## This is a web based application designed for the staff members of a local food bank to serve as a tool for basic stock keeping.
+## This is a web based application designed for the sale of takaway shakes and protein snacks.
 
 <h2 align="center"><img src="https://i.ibb.co/0tRh3g5/responsive-design.png"></h2>
 
@@ -15,8 +15,8 @@
     -   #### First Time User Goals
 
         1. As a First Time User, I want to easily understand the main purpose of the web app.
-        2. As a First Time User, I want to have access to basic functionaities. 
-        3. As a First Time User, I want to be able to register to gain access to more advanced functionalities
+        2. As a First Time User, I want to be able to browse the menu.
+        3. As a First Time User, I want to be able to register to be able to make orders.
     
     -   #### Returning Visitor Goals
 
@@ -34,7 +34,7 @@
         -   The application's two main colours are teal and white. The buttons have their distinctive and contrasting colours to visually hint at their function.
 
     -   #### Typography
-        -   The font of choice for the application is Lato Google font with Sans-Serif as backup.
+        -   The font of choice for the application is Roboto Google font with Sans-Serif as backup.
 
     -   #### Imagery
         -   The Background image is referring to the purpose of the application. Icons hint at various features and CRUD functionalities.
