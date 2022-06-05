@@ -139,10 +139,17 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   The code has been largely adapted form [Code Institute's](https://codeinstitute.net/) 'Mini Project' tutorial in 'Backend Development' section by [Tim Nelson](https://github.com/TravelTimN).
 
 ### Content
--   All content was written by the developer.
+-   Chocolate Protein Shake description and nutritional values [Chelsea's Messy Arpron](https://www.chelseasmessyapron.com/triple-chocolate-chunk-brownie-protein-shake/)
+-   Coffee Protein Shake description and nutritional values [Love & Zest](https://www.loveandzest.com/coffee-lovers-protein-shake/)
+-   Cookies and Cream Protein Shake descritption and nutritional values [The Seasoned Mom](https://www.theseasonedmom.com/cookies-and-cream-protein-shake/)
+-   Strawberry and Banana Protein Shake descritption and nutritional values [The Protein Chef](https://theproteinchef.co/strawberry-banana-protein-shake-recipe/)
+-   All remaining content was written by the developer.
 
 ### Media
 -   Background image for the app is a free stock photo by Kindel Media at [Pexel] https://www.pexels.com/pl-pl/zdjecie/koktajl-sloj-odswiezenie-zimne-napoje-8181548/
-
+-   Chocolate Protein Shake photo [Chelsea's Messy Arpron](https://www.chelseasmessyapron.com/wp-content/uploads/2013/10/Chocolate-Protein-Shake-1.jpg)
+-   Coffee Protein Shake photo [Love & Zest](https://www.loveandzest.com/wp-content/uploads/2019/02/Coffee-Protein-Shake-Web-Ready-8-640x960.jpg)
+-   Cookies and Cream Protein Shake [The Seasoned Mom](https://www.theseasonedmom.com/wp-content/uploads/2018/12/Cookies-and-Cream-Protein-Shake-8a.jpg)
+-   Strawberry Banana Protein Shake [The Protein Chef](https://media.theproteinchef.co/wp-content/uploads/2021/08/Strawberry-Banana-Protein-Shake-Recipe-683x1024.jpg)
 ### Acknowledgements
 -   Also many thanks to my Harlow College tutor Patrick Justus Phd who provided me with input on black box testing, database schema and ERD.
