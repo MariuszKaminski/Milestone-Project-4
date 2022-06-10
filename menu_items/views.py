@@ -11,8 +11,24 @@ def all_menu_items(request):
     menu_items = Item.objects.all()
     query = None
     categories = None
-
+    sort = None
+    direction = None
+    
     if request.GET:
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                menu_items = menu_items.annotate(lower_name=Lower('name'))
+
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            menu_items = menu_items.order_by(sortkey)
+
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             menu_items = menu_items.filter(category__name__in=categories)
@@ -26,11 +42,14 @@ def all_menu_items(request):
             
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             menu_items = menu_items.filter(queries)
+    
+    current_sorting = f'{sort}_{direction}'
 
     context = {
         'menu_items': menu_items,
         'search_term': query,
         'current_categories': categories,
+        'current_sorting': current_sorting,
     }
     
     return render(request, 'menu_items/menu_items.html', context)
