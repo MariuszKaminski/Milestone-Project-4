@@ -5,8 +5,7 @@
                 Full Menu
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="full-menu-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
+                <a href="" class="dropdown-item">By Price</a>                
                 <a href="" class="dropdown-item ">By Category</a>
                 <a href="{% url 'menu_items' %}" class="dropdown-item">Full Menu</a>
             </div>
@@ -17,10 +16,10 @@
                 Protein Drinks
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="drinks-link">                
-                <a href="" class="dropdown-item">Smoothies</a>
-                <a href="" class="dropdown-item">Frappés</a>
-                <a href="" class="dropdown-item">Energy Drinks</a>
-                <a href="" class="dropdown-item">All Drinks</a>
+                <a href="{% url 'menu_items' %}?category=smoothies" class="dropdown-item">Smoothies</a>
+                <a href="{% url 'menu_items' %}?category=frapés" class="dropdown-item">Frapés</a>
+                <a href="{% url 'menu_items' %}?category=energy drinks" class="dropdown-item">Energy Drinks</a>
+                <a href="{% url 'menu_items' %}?category=smoothies, frapés, energy drinks" class="dropdown-item">All Drinks</a>
             </div>
         </li>
 
@@ -28,23 +27,23 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="snacks-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Protein Snacks
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Bars</a>
-                <a href="" class="dropdown-item">Flapjacks</a>
-                <a href="" class="dropdown-item">Cookies</a>
-                <a href="" class="dropdown-item">Crisps</a>
-                <a href="" class="dropdown-item">Pancakes</a>
-                <a href="" class="dropdown-item">All Snacks</a>
+            <div class="dropdown-menu border-0" aria-labelledby="protein-snacks-link">
+                <a href="{% url 'menu_items' %}?category=bars" class="dropdown-item">Bars</a>
+                <a href="{% url 'menu_items' %}?category=flapjacks" class="dropdown-item">Flapjacks</a>
+                <a href="{% url 'menu_items' %}?category=cookies" class="dropdown-item">Cookies</a>
+                <a href="{% url 'menu_items' %}?category=crisps" class="dropdown-item">Crisps</a>
+                <a href="{% url 'menu_items' %}?category=pancakes" class="dropdown-item">Pancakes</a>
+                <a href="{% url 'menu_items' %}?category=bars, flapjacks, cookies, crisps, pancakes" class="dropdown-item">All Snacks</a>
             </div>
         </li>
 
-        <li class="nav-item dropdown">
+        <li>
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="meals-link">
                 Protein Meals
             </a>            
         </li>
 
-        <li class="nav-item dropdown">
+        <li>
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="deals-link">
                 Deals
             </a>            
