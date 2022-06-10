@@ -22,10 +22,10 @@ from .models import Item
 def item_detail(request, item_id):
     """ A view to show all menu items, including sorting and search queries """
 
-    menu_item = get_object_or_404(Item, ik=item_id)
+    item = get_object_or_404(Item, pk=item_id)
 
     context = {
-        'menu_item': menu_item,
+        'item': item,
     }
     
     return render(request, 'menu_items/item_detail.html', context)
