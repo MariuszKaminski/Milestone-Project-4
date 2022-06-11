@@ -21,7 +21,8 @@ def all_menu_items(request):
             if sortkey == 'name':
                 sortkey = 'lower_name'
                 menu_items = menu_items.annotate(lower_name=Lower('name'))
-
+            if sortkey == 'category':
+                sortkey = 'category__name'
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
@@ -54,10 +55,6 @@ def all_menu_items(request):
     
     return render(request, 'menu_items/menu_items.html', context)
 
-from django.shortcuts import render
-from .models import Item
-
-# Create your views here.
 
 def item_detail(request, item_id):
     """ A view to show all menu items, including sorting and search queries """
