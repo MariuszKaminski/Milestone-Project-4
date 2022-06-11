@@ -147,6 +147,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   Protein Packed Skinny Frozen Mocha description and nutritional values [Nutrition Starring YOU](https://nutritionstarringyou.com/protein-packed-skinny-frozen-mocha/)
 -   Salted Caramel Mocha Protein Frapé descripion and nuritional values [The Seasoned Mom](https://www.theseasonedmom.com/salted-caramel-mocha-protein-shake/)
 -   Vanilla Frapé descripion and nuritional values [foodfanatic](https://www.foodfanatic.com/recipes/healthy-homemade-vanilla-frappuccino-recipe/)
+-   Reign Peach Fizz descripion and nuritional values [musclefood](https://www.musclefood.com/reign-peach-fizz.html)
+-   Moose Juice Berry description and nutritional values [musclemoose](https://musclemoose.co.uk/product/berry/)
+-   Protein Dynamix BCAA Amino Energy descripion and nuritional values [musclefinessewholesale](https://musclefinessewholesale.com/protein-dynamix-bcaa-amino-energy-12-x-500ml.html)
 -   All remaining content was written by the developer.
 
 ### Media
@@ -159,5 +162,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   Protein Packed Skinny Frozen Mocha [Nutrition Starring YOU](https://www.simplyhappyfoodie.com/wp-content/uploads/2019/07/iced-coffee-protein-shake-1b.jpg)
 -   Salted Caramel Mocha Protein Frapé [The Seasoned Mom](https://www.theseasonedmom.com/wp-content/uploads/2015/03/Salted-Caramel-Mocha-Protein-Shake-17.jpg)
 -   Vanila Frapé [foodfanatic](https://food-fanatic-res.cloudinary.com/iu/s--Qr4q1aJB--/t_xlarge_p/cs_srgb,f_auto,fl_strip_profile.lossy,q_auto:420/v1502748400/healthy-homemade-vanilla-frappuccino-pic.jpg)
+-   Reign Peach Fizz [musclefood](https://d3rxe6nylop6k3.cloudfront.net/catalog/product/cache/1/image/530x/9df78eab33525d08d6e5fb8d27136e95/m/o/monster-reign-peach-fizz-500ml-mf_dr391_sample_1.jpg)
+-   Moose Juice Berry [musclemoose](https://musclemoose.co.uk/wp-content/uploads/2021/04/MooseJuice_Berry-Flavour-Can_Single-600x849.png)
+-   Protein Dynamix BCAA Amino Energy [musclefinessewholesale](https://musclefinessewholesale.com/media/catalog/product/cache/21d694c873907d78b2b1c9b0cbd4c5fc/t/r/tropical_energy_drink.jpg)
 ### Acknowledgements
 -   Also many thanks to my Harlow College tutor Patrick Justus Phd who provided me with input on black box testing, database schema and ERD.
