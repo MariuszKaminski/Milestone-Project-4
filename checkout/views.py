@@ -2,10 +2,11 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.conf import settings
 
-from .forms import OrderForm
-from .models import Order, OrderLineItem
+
 from menu_items.models import Item
 from bag.contexts import bag_contents
+from .models import Order, OrderLineItem
+from .forms import OrderForm
 
 import stripe
 
@@ -77,8 +78,8 @@ def checkout(request):
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
-        'stripe_public_key': stripe_public_key,
-        'client_secret': intent.client_secret,
+        'stripe_public_key': 'pk_test_51LBFYqL2aQsEHfcawvIwh5iUl0MF83yf3bnHiCKWK4osYPQs5HB8mQEE4jlpBNgFNuFrvWesOQqMmrPr6l3m044N00JEU2bShg',
+        'client_secret': 'test client',
     }
 
     return render(request, template, context)
